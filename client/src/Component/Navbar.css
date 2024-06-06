@@ -1,0 +1,59 @@
+.container {
+  max-width: 140rem;
+  padding: 4.2rem 13rem;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-brand a {
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: inherit;
+}
+ 
+ul {
+  display: flex;
+  gap: 3.2rem;
+}
+ 
+li {
+  list-style: none;
+  position: relative;
+}
+a {
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  text-decoration: inherit;
+}
+ 
+nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+ 
+nav ul li a:active {
+  color: transparent;
+}
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #7a52ff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+ 
+nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
